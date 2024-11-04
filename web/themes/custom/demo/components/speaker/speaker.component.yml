@@ -1,0 +1,37 @@
+name: speaker
+description: Component used to add and style Speakers.
+status: experimental
+group: Navigation
+libraryOverrides:
+  css:
+    theme:
+      speaker.css : {}
+  dependencies:
+    - core/once
+    - core/drupal
+props:
+  type: object
+  required:
+    - header
+    - speakers-info
+  properties:
+    header:
+      title: Header
+      description: THe heading of the section
+      examples:
+        - View our Featured Speakers for the Event 
+      type: string
+    ctaButton:
+     title: Footer CTA
+     type: string
+     examples:
+      - See the program
+    footer text:
+      title: Footer text
+      type: string
+      description: Footer text
+      examples:
+        - Speakers are core contributors and industry thought leaders working at companies that push for innovation.
+    speakers-info:
+      title: Speaker
+      type: node

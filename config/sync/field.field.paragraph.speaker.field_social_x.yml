@@ -1,0 +1,23 @@
+uuid: fe86abdf-a7b4-49ee-b5c3-b435620eae44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_x
+    - paragraphs.paragraphs_type.speaker
+  module:
+    - link
+id: paragraph.speaker.field_social_x
+field_name: field_social_x
+entity_type: paragraph
+bundle: speaker
+label: 'Social link - X'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

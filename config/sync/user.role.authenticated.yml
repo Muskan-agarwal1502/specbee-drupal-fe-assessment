@@ -1,0 +1,26 @@
+uuid: 9a74cae4-767f-44d0-a8b0-001d91e29e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.speakers
+    - core.entity_view_display.node.page.default
+  module:
+    - block_content
+    - layout_builder
+    - media
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'configure all page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'edit any speakers block content'
+  - 'view media'

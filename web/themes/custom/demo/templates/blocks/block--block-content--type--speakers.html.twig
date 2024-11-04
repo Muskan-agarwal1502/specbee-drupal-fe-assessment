@@ -1,0 +1,26 @@
+<div class="speakers">
+	<div class="container">
+		<div class="speakers__content">
+			<div class="speakers__header">
+				<h2>{{ content.field_title }}</h2>
+				{% if content.field_footer_text.value is not empty %}
+				<div class="speakers__footer-text">{{ content.field_footer_text }}</div>
+				{% endif %}
+			</div>
+			<div class="speakers__slider">
+				<div class="splide" id="speaker-slider">
+					<div class="splide__track">
+						<ul class="splide__list">
+							{{ content.field_speakers }}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% if content.field_cta.uri is not empty %}
+			<div class="speakers_cta">
+				{{ content.field_cta }}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+uuid: 11b35e0b-d349-4d2b-a737-ee6c7980c9de
+langcode: en
+status: true
+dependencies: {  }
+id: speakers
+label: Speakers
+revision: false
+description: 'Add Speakers to be displayed in a slider with basic information.'

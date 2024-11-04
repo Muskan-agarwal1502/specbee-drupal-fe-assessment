@@ -1,0 +1,31 @@
+uuid: dc1de2d3-d3c9-4c5e-9c05-6ecabc3deef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.speakers
+    - field.storage.block_content.field_speakers
+    - paragraphs.paragraphs_type.speaker
+  module:
+    - entity_reference_revisions
+id: block_content.speakers.field_speakers
+field_name: field_speakers
+entity_type: block_content
+bundle: speakers
+label: Speaker(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      speaker: speaker
+    negate: 0
+    target_bundles_drag_drop:
+      speaker:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: e7570fd3-f588-49c1-a404-b77423ccfe09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_linkedin
+    - paragraphs.paragraphs_type.speaker
+  module:
+    - link
+id: paragraph.speaker.field_social_linkedin
+field_name: field_social_linkedin
+entity_type: paragraph
+bundle: speaker
+label: 'Social link - LinkedIn'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

@@ -1,0 +1,19 @@
+uuid: c9e1ec80-eabf-437d-b34c-068aa09fc8db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_organization
+    - paragraphs.paragraphs_type.speaker
+id: paragraph.speaker.field_organization
+field_name: field_organization
+entity_type: paragraph
+bundle: speaker
+label: Organization
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

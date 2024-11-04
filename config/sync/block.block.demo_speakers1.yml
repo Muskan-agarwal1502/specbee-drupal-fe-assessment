@@ -1,0 +1,25 @@
+uuid: 30c8eb18-05e5-4faa-b435-5b8e1befdf3d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:speakers:db773306-63b0-44fe-9a41-4a9da74f056a'
+  module:
+    - block_content
+  theme:
+    - demo
+id: demo_speakers1
+theme: demo
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:db773306-63b0-44fe-9a41-4a9da74f056a'
+settings:
+  id: 'block_content:db773306-63b0-44fe-9a41-4a9da74f056a'
+  label: 'Speakers: 1'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

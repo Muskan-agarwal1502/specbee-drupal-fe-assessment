@@ -1,0 +1,62 @@
+{{ attach_library('demo/speaker') }}
+
+<li class="splide__slide" data-modal="modal-{{ paragraph.id() }}">
+	<div class="speaker">
+		<div class="speaker-image">
+			{{ content.field_photo }}
+		</div>
+		<div class="speaker-info">
+			<h4>{{ paragraph.field_name.value|raw }}</h4>
+			<h5>{{ paragraph.field_designation.value|raw }}</h5>
+			<h6>{{ paragraph.field_organization.value|raw }}</h6>
+		</div>
+	</div>
+</li>
+
+<div class="speaker-details-modal" id="modal-{{ paragraph.id() }}">
+	<div class="modal-content">
+		<div class="modal-body">
+			<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="row">
+				<div class="left-content">
+					<div class="speaker-content">
+						<div class="speaker-image">{{ content.field_photo }}</div>
+						<div class="speaker-info">
+							<h4>{{ paragraph.field_name.value|raw }}</h4>
+							<h5>{{ paragraph.field_designation.value|raw }}</h5>
+							<h6>{{ paragraph.field_organization.value|raw }}</h6>
+							{% if (paragraph.field_social_drupal.uri is not empty) or (paragraph.field_social_x.uri is not empty) or (paragraph.field_social_linkedin.uri is not empty) %}
+							<div class="social-links">
+								<ul>
+									{% if paragraph.field_social_drupal.uri is not empty %}
+									<li class="drupal">
+										<a href="{{ paragraph.field_social_drupal.uri }}" target="_blank"><img src="/themes/custom/demo/images/drupal.svg"></a>
+									</li>
+									{% endif %}
+									{% if paragraph.field_social_x.uri is not empty %}
+									<li>
+										<a href="{{ paragraph.field_social_x.uri }}" target="_blank"><img src="/themes/custom/demo/images/twitter.svg"></a>
+									</li>
+									{% endif %}
+									{% if paragraph.field_social_linkedin.uri is not empty %}
+									<li>
+										<a href="{{ paragraph.field_social_linkedin.uri }}" target="_blank"><img src="/themes/custom/demo/images/Vector.svg"></a>
+									</li>
+									{% endif %}
+								</ul>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="right-content">
+					<div class="more-info">
+						{{ paragraph.field_bio.value|raw }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
